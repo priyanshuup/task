@@ -229,6 +229,24 @@
     gap: 0.05vw;
     padding: 1vh 0;
     padding-right: 0.3vw;
+    overflow: hidden;
+  }
+
+  .youtube-container {
+    overflow: hidden;
+    width: 57%;
+    /* Keep it the right aspect-ratio */
+    aspect-ratio: 16/9;
+    /* No clicking/hover effects */
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left:-100%;
   }
   
   .scndpart{
